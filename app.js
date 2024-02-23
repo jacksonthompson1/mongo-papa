@@ -11,10 +11,6 @@ app.set('views', path.join(__dirname, 'views'));
 
 // use res.render to load up an ejs view file
 
-let myTypeServer = "9️⃣ The Peacemaker ✌🏻";
-
-
-
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(process.env.URI, {
   serverApi: {
@@ -59,12 +55,6 @@ app.get('/', async (req, res) => {
   });
   
 });
-
-
-app.get('/send', function (req, res) {
-  
-    res.send('Hello World from Express <br><a href="/">home</a>')
-})
 
 // app.listen(3000)
 
